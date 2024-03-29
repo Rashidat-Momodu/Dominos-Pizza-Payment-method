@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.payment-methods {
+  text-align: left;
+}
+
+input[type="text"], button {
+  margin: 10px;
+  padding: 8px;
+  width: 250px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#paymentResponse {
+  margin-top: 20px;
+}
+
+  
+  
+  

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domino's Pizza Payment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Domino's Pizza Payment</h1>
+    <div class="payment-methods">
+      <h2>Select Payment Method</h2>
+      <label>
+        <input type="radio" name="paymentMethod" value="cash">
+        Pay on Delivery with Cash
+      </label>
+      <label>
+        <input type="radio" name="paymentMethod" value="creditCard">
+        Pay with Credit Card
+      </label>
+      <label>
+        <input type="radio" name="paymentMethod" value="bankTransfer">
+        Pay on Delivery with Bank Transfer
+      </label>
+    </div>
+    <div id="creditCardDetails" style="display: none;">
+      <h2>Credit Card Details</h2>
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" placeholder="Enter card number">
+      <label for="expiry">Expiry Date:</label>
+      <input type="text" id="expiry" placeholder="MM/YY">
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" placeholder="CVV">
+    </div>
+    <div id="bankTransferDetails" style="display: none;">
+      <h2>Nigerian Bank Account Details</h2>
+      <p>Account Name: John Doe</p>
+      <p>Account Number: 0123456789</p>
+      <p>Bank Name: Eco Bank PLC</p>
+      <p>Bank Transfer Instructions: Transfer the total amount of ₦5,000 to the above account and provide proof of payment upon delivery.</p>
+    </div>
+    
+    <button id="payButton">Pay Now</button>
+    <div id="paymentResponse"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
